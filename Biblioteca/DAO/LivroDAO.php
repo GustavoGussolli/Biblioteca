@@ -9,7 +9,7 @@ class LivroDAO {
 
     public function inserirLivro(Livro $livro) {
         $sql = "INSERT INTO livros (tipo, titulo, autor, editora, ano_publicacao, numero_paginas)
-                VALUES(?, ?, ?, ?, ?, ?, ?)";
+                VALUES(?, ?, ?, ?, ?, ?)";
     
         $con = Conexao::getCon();
         $stm = $con->prepare($sql);

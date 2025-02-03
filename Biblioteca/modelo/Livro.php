@@ -2,7 +2,6 @@
 
 abstract class Livro {
 
-    // Atributos
     protected int $id;
     protected string $titulo;
     protected string $autor;
@@ -10,10 +9,8 @@ abstract class Livro {
     protected int $anoPublicacao;
     protected int $numeroPaginas;
 
-    // Métodos
     public abstract function getTipo();
 
-    // GETs e SETs
     public function getId(): int {
         return $this->id;
     }
