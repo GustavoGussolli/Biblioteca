@@ -58,7 +58,7 @@ do {
 
             foreach ($livros as $l) {
                 printf(
-                    "%d | %s | %s | %s | %d | %s | %d | \n",
+                    "%d | %s | %s | %s | %d | %d | \n",
                     $l->getId(),
                     $l->getTipo(),
                     $l->getTitulo(),
@@ -79,7 +79,7 @@ do {
 
             if ($livro) {
                 printf(
-                    "Livro encontrado: %d | %s | %s | %s | %d | %s | %d | \n",
+                    "Livro encontrado: %d | %s | %s | %s | %d | %d | \n",
                     $livro->getId(),
                     $livro->getTipo(),
                     $livro->getTitulo(),
@@ -105,7 +105,7 @@ do {
                 print("Indice: " . $indice . "\n");
                 $indice++;
                 printf(
-                    "%d | %s | %s | %s | %d | %s | %d | \n",
+                    "%d | %s | %s | %s | %d | %d | \n",
                     $l->getId(),
                     $l->getTipo(),
                     $l->getTitulo(),
